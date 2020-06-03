@@ -1,0 +1,175 @@
+/*font awesome8*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*reset*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/*GLOBAL SYTLES*/
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2,p{
+    padding: 1rem;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+/*END OF GLOBAL SYTLES*/
+
+:root {
+    --VeryLightGrayishBlue: hsl(240, 78%, 98%);
+    --LightGrayishBlue: hsl(234, 14%, 74%);
+    --GrayishBlue: hsl(233, 13%, 49%);
+    --DarkGrayishBlue: hsl(232, 13%, 33%);
+    --gradient: hsl(236, 72%, 79%);
+    --gradient2: hsl(237, 63%, 64%);
+    --fontfamily: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    background: url('../images/bg-top.svg')center/cover no-repeat;
+    background-position: right;
+}
+
+button {
+    padding: .7rem 6rem;
+    background: transparent;
+    border: none;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.2rem
+}
+
+
+/*HEAD*/
+
+.head {
+    margin: 2rem;
+    color: var(--DarkGrayishBlue)
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.toggle-all-container {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+}
+
+.toggle-all-container .toggle-container {
+    height: 3rem;
+    width: 4rem;
+    background: var(--gradient);
+    position: relative;
+    border-radius: 2rem;
+    margin: 0rem .5rem;
+}
+
+.toggle {
+    width: .9rem;
+    padding: 1rem;
+    height: 2rem;
+    bottom: .5rem;
+    top: .5rem;
+    background: var(--VeryLightGrayishBlue);
+    border-radius: 2rem;
+    position: absolute;
+    margin: 0px .5rem
+}
+
+.toggle-btn {
+    right: 0;
+    transition: all .5s linear
+}
+
+.toggle-parent {
+    background: var(--gradient2) !important;
+    transition: all .5s ease;
+}
+
+
+/*END OF HEAD*/
+/*MAIN CONTENT*/
+
+.conent-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+    padding: 4rem 2rem;
+}
+
+.content-1, .content-2, .content-3 {
+    padding: 2rem;
+}
+.content-1 > div, .content-2 > div, .content-3 > div {
+    border-top: 1px solid gray;
+}
+.content-container > div {
+    background: #fff;
+    box-shadow: 3px 3px 3px 3px rgba(145, 143, 143, 0.7);
+}
+
+.slightly-top {
+    background: var(--gradient2) !important;
+    color: #fff;
+    position: relative;
+    padding: 4rem 1rem;
+}
+
+.btn {
+    background: var(--gradient2);
+}
+
+.content-2 .btn {
+    background: #fff;
+    color: var(--gradient2);
+}
+
+.content-2 .btn:hover {
+    color: #fff;
+    background: var(--gradient2);
+    border: 1px solid rgb(155, 146, 146);
+}
+.btn:hover {
+    transition: all .5s linear;
+    background: transparent !important;
+    border: 1px solid rgb(155, 146, 146);
+}
+
+/*quary for desktop*/
+@media screen and (min-width: 899px) {
+    .content-container {
+        grid-gap: initial;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+/*END OF MAIN CONTENT*/
+.price{
+}
